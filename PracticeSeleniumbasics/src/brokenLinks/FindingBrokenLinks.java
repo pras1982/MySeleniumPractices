@@ -13,7 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//This is to identify the broken links in the application
 public class FindingBrokenLinks {
 
 	public static void main(String[] args) throws MalformedURLException, IOException {
