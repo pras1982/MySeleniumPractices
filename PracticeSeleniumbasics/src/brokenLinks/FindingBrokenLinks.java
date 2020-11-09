@@ -13,12 +13,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 //This is to identify the broken links in the application
 public class FindingBrokenLinks {
 
 	public static void main(String[] args) throws MalformedURLException, IOException {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Shalini\\eclipse-workspace\\PracticeSeleniumbasics\\drivers\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
 		List<WebElement> discountCouponsLinks = driver
