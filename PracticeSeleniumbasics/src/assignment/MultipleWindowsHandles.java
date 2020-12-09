@@ -18,7 +18,7 @@ public class MultipleWindowsHandles {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-			Actions	act	=	new Actions(driver);
+		//Actions	act	=	new Actions(driver);
 		driver.get("https://the-internet.herokuapp.com/windows");
 		driver.findElement(By.xpath("//a[text()='Click Here']")).click();
 		Set<String> allWindows = driver.getWindowHandles();

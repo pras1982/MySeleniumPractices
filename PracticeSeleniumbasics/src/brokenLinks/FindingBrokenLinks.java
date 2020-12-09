@@ -21,6 +21,7 @@ public class FindingBrokenLinks {
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
+		driver.manage().deleteAllCookies();
 		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
 		List<WebElement> discountCouponsLinks = driver
 				.findElements(By.cssSelector("table[class='gf-t'] td:nth-child(2) ul li a"));
